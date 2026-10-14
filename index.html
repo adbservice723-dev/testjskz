@@ -1,367 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>RADHIKA TRADER OFFICIAL | Trading Learning Community</title>
-
-  <meta name="description" content="Join Trade With Gautam Jha on Telegram for market learning, chart concepts and educational updates." />
-
-  <!-- Meta Pixel Code -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;
-    n.push=n;
-    n.loaded=!0;
-    n.version='2.0';
-    n.queue=[];
-    t=b.createElement(e);
-    t.async=!0;
-    t.src=v;
-    s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}
-    (window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-
-    fbq('init', '2098569020749256');
-    fbq('track', 'PageView');
-
-    // Subscribe event: maximum once per page open
-    window.__subscribeTracked = false;
-
-    function trackSubscribeOnce() {
-      if (window.__subscribeTracked) {
-        return;
-      }
-
-      // Prevent repeated Subscribe events on this page
-      window.__subscribeTracked = true;
-
-      if (typeof window.fbq === 'function') {
-        fbq('track', 'Subscribe', {
-          value: 100,
-          currency: 'INR'
-        });
-      }
-    }
-  </script>
-  <!-- End Meta Pixel Code -->
-
-  <noscript>
-    <img
-      height="1"
-      width="1"
-      style="display:none"
-      src="https://www.facebook.com/tr?id=2098569020749256&ev=PageView&noscript=1"
-      alt=""
-    />
-  </noscript>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝐓𝐫𝐚𝐝𝐞 𝐖𝐢𝐭𝐡 Gokul</title>
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
     body {
+      background-color: #000000;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       min-height: 100vh;
-      background:
-        radial-gradient(circle at top, #102536 0%, #05080b 35%, #000 75%);
-      color: #fff;
-      padding: 18px 14px 28px;
+      padding: 15px;
     }
 
-    .container {
+    /* Main Neon Card Container */
+    .card-container {
       width: 100%;
-      max-width: 430px;
-      margin: auto;
+      max-width: 400px;
+      background-color: #050b14;
+      border: 1.5px solid #00a2ff;
+      border-radius: 28px;
+      padding: 30px 20px 20px;
       text-align: center;
+      box-shadow: 0 0 15px rgba(0, 162, 255, 0.2);
     }
 
-    /* Profile */
-    .profile-wrap {
-      width: 145px;
-      height: 145px;
-      margin: 8px auto 18px;
-      padding: 4px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #38b6ff, #ffffff, #1677b8);
-      box-shadow: 0 0 35px rgba(56, 182, 255, .35);
+    /* Profile Image with Cyan Glow */
+    .profile-wrapper {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 20px;
     }
 
-    .profile-wrap img {
+    .profile-img {
       width: 100%;
       height: 100%;
-      display: block;
-      object-fit: cover;
       border-radius: 50%;
-      border: 4px solid #05080b;
+      object-fit: cover;
+      border: 2px solid #00d2ff;
+      box-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
     }
 
-    /* Heading */
-    .badge {
-      display: inline-block;
-      padding: 6px 13px;
-      border-radius: 30px;
-      border: 1px solid rgba(56, 182, 255, .45);
-      background: rgba(56, 182, 255, .08);
-      color: #6bc9ff;
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: .5px;
-      margin-bottom: 10px;
-    }
-
-    h1 {
-      font-size: 27px;
-      line-height: 1.2;
-      margin-bottom: 8px;
-    }
-
-    .subtitle {
-      color: #b7c1c9;
-      font-size: 14px;
-      line-height: 1.5;
-      margin-bottom: 18px;
-    }
-
-    /* Main CTA */
-    .join-btn {
-      position: relative;
-      display: block;
-      width: 100%;
-      padding: 16px 14px;
-      border-radius: 12px;
-      text-decoration: none;
-      color: #fff;
-      font-size: 17px;
+    /* Title */
+    .title {
+      font-size: 22px;
       font-weight: 800;
-      letter-spacing: .3px;
-      background: linear-gradient(135deg, #1597e5, #07558f);
-      border: 1px solid rgba(255, 255, 255, .7);
-      box-shadow: 0 8px 25px rgba(21, 151, 229, .28);
-      transition: .2s;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
     }
 
-    .join-btn:active {
-      transform: scale(.98);
-    }
-
-    .cta-small {
-      display: block;
-      margin-top: 8px;
-      color: #8fa0ab;
-      font-size: 11px;
-    }
-
-    /* Arrow */
-    .arrow {
-      font-size: 27px;
-      margin: 7px 0 5px;
-      color: #48baff;
-    }
-
-    /* Info Card */
-    .card {
-      margin-top: 13px;
-      padding: 18px 15px;
-      text-align: left;
-      border-radius: 16px;
-      border: 1px solid rgba(255, 255, 255, .10);
-      background: rgba(12, 18, 23, .88);
-      box-shadow: 0 10px 35px rgba(0, 0, 0, .35);
-    }
-
-    .card-title {
-      text-align: center;
-      font-size: 16px;
-      font-weight: 800;
-      margin-bottom: 14px;
-    }
-
-    .item {
+    /* List Items */
+    .feature-list {
       display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      padding: 10px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, .07);
-      font-size: 14px;
-      line-height: 1.4;
-      color: #e8edf1;
+      flex-direction: column;
+      gap: 0;
+      margin-bottom: 25px;
+      text-align: left;
     }
 
-    .item:last-child {
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 10px;
+      font-size: 14px;
+      color: #e0e6ed;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .feature-item:last-child {
       border-bottom: none;
-      padding-bottom: 0;
     }
 
     .icon {
       font-size: 18px;
-      width: 24px;
-      flex-shrink: 0;
     }
 
-    /* Second CTA */
-    .second-btn {
-      margin-top: 15px;
-    }
-
-    /* Disclaimer */
-    .disclaimer {
-      margin-top: 15px;
-      padding: 12px;
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, .10);
-      color: #9da8af;
-      font-size: 11px;
-      line-height: 1.5;
-      background: rgba(255, 255, 255, .025);
-    }
-
-    /* Agency */
-    .agency {
-      display: block;
-      margin: 15px auto 0;
-      width: 92%;
-      padding: 11px 15px;
-      border-radius: 12px;
-      text-decoration: none;
-      color: #9ca8b1;
-      background: #0b1116;
-      border: 1px solid #1c2b36;
+    /* Subtitle Text */
+    .subtext {
       font-size: 13px;
+      color: #a0aec0;
+      line-height: 1.4;
+      margin-bottom: 20px;
     }
 
-    .agency strong {
-      color: #45baff;
+    /* Gradient Join Button */
+    .btn-telegram {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      background: linear-gradient(90deg, #00c6ff 0%, #a100ff 100%);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 800;
+      border-radius: 30px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
+      margin-bottom: 20px;
+      transition: transform 0.2s ease;
     }
 
-    .footer {
-      margin-top: 13px;
-      color: #68747c;
+    .btn-telegram:active {
+      transform: scale(0.98);
+    }
+
+    /* Hindi Quote */
+    .quote-text {
+      font-size: 14px;
+      color: #cbd5e0;
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+
+    /* Agency Badge (Clickable Link) */
+    .agency-badge {
+      display: block;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background-color: rgba(255, 255, 255, 0.02);
+      border-radius: 12px;
+      padding: 10px;
+      font-size: 12px;
+      color: #a0aec0;
+      margin-bottom: 20px;
+      text-decoration: none;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .agency-badge:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-color: rgba(0, 162, 255, 0.4);
+    }
+
+    .agency-badge span {
+      color: #00a2ff;
+      font-weight: 700;
+    }
+
+    /* Disclaimer Links & Text */
+    .footer-links {
+      font-size: 11px;
+      color: #718096;
+      margin-bottom: 6px;
+    }
+
+    .footer-links a {
+      color: #718096;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .disclaimer {
       font-size: 10px;
-    }
-
-    /* Mobile */
-    @media (max-width: 360px) {
-      h1 {
-        font-size: 23px;
-      }
-
-      .profile-wrap {
-        width: 125px;
-        height: 125px;
-      }
-
-      .join-btn {
-        font-size: 15px;
-      }
+      color: #4a5568;
     }
   </style>
 </head>
-
 <body>
-  <div class="container">
 
-    <!-- Profile -->
-    <div class="profile-wrap">
-      <img
-        src="https://i.ibb.co/0y95gJmz/radika.jpg"
-        alt="Trade With Gautam Jha"
-      />
+  <div class="card-container">
+    
+    <!-- Profile Image -->
+    <div class="profile-wrapper">
+      <img src="https://i.ibb.co/HpbR2R0b/PHOTO-2026-09-09-09-04-16.jpg" alt="Trade With Gautam Jha" class="profile-img">
     </div>
 
-    <div class="badge">
-      📈 TRADING LEARNING COMMUNITY
-    </div>
+    <!-- Title -->
+    <h1 class="title">TRADE WITH GOKUL</h1>
 
-    <h1>RADHIKA TRADER OFFICIAL</h1>
-
-    <div class="subtitle">
-      Learn market concepts, chart reading and risk-management basics
-      through our Telegram community.
-    </div>
-
-    <!-- TOP CTA -->
-    <a
-      class="join-btn"
-      href="https://t.me/+qbD-A2CB8wA1Yzhl"
-      onclick="trackSubscribeOnce()"
-    >JOIN FREE TELEGRAM CHANNEL</a>
-
-    <div class="cta-small">
-      Free access • Educational content • Telegram
-    </div>
-
-    <div class="arrow">👇</div>
-
-    <!-- FEATURES -->
-    <div class="card">
-      <div class="card-title">What You Can Explore</div>
-
-      <div class="item">
+    <!-- Features List -->
+    <div class="feature-list">
+      <div class="feature-item">
+        <span class="icon">🌐</span>
+        <span>Learning & Educational Sessions</span>
+      </div>
+      <div class="feature-item">
         <span class="icon">📊</span>
-        <span>Market analysis and educational discussions</span>
+        <span>Market Concepts & Awareness</span>
       </div>
-
-      <div class="item">
-        <span class="icon">📈</span>
-        <span>Nifty &amp; market chart-reading concepts</span>
+      <div class="feature-item">
+        <span class="icon">💎</span>
+        <span>Chart Reading Concepts</span>
       </div>
-
-      <div class="item">
-        <span class="icon">🎯</span>
-        <span>Technical-analysis learning concepts</span>
-      </div>
-
-      <div class="item">
-        <span class="icon">🛡️</span>
-        <span>Risk-management and trading awareness</span>
-      </div>
-
-      <div class="item">
-        <span class="icon">🚀</span>
-        <span>Regular educational market updates</span>
+      <div class="feature-item">
+        <span class="icon">💻</span>
+        <span>Educational Case Discussions</span>
       </div>
     </div>
 
-    <!-- SECOND CTA -->
-    <a
-      class="join-btn second-btn"
-      href="https://t.me/+qbD-A2CB8wA1Yzhl"
-      onclick="trackSubscribeOnce()"
-    >JOIN FREE TELEGRAM CHANNEL</a>
+    <!-- Subtitle -->
+    <p class="subtext">
+      Join our learning community and grow your knowledge
+    </p>
 
-    <div class="cta-small">
-      Tap the button above to continue
-    </div>
-
-    <!-- Disclaimer -->
-    <div class="disclaimer">
-      ⚠️ Educational purpose only. Trading and investing involve risk.
-      Please make decisions according to your own research and risk tolerance.
-    </div>
-
-    <!-- Adbagency: no Subscribe event -->
-    <a
-      class="agency"
-      href="https://t.me/+KMkMkqIAJvliMzM1"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      Managed by <strong>Adbagency</strong>
+    <!-- Join Button -->
+    <a href="https://t.me/+AqY16zQLwhg2MjFl" class="btn-telegram">
+      JOIN FREE TELEGRAM
     </a>
 
-    <div class="footer">
-      © 2026 RADHIKA TRADER OFFICIAL
+    <!-- Hindi Quote -->
+    <p class="quote-text">
+      नियत अच्छी और मेहनत सच्ची हो, तो कामयाबी जरूर मिलती है।
+    </p>
+
+    <!-- Agency Credit (Clickable Link to Telegram Channel) -->
+    <a href="https://t.me/+KMkMkqIAJvliMzM1" class="agency-badge" target="_blank">
+      This Channel Advertise By <span>ADB AGENCY</span>
+    </a>
+
+    <!-- Footer Links -->
+    <div class="footer-links">
+      <a href="https://t.me/+AqY16zQLwhg2MjFl"" target="_blank">Terms | Privacy | Disclaimer</a>
+    </div>
+
+    <!-- Facebook Disclaimer -->
+    <div class="disclaimer">
+      This site is not part of Facebook™ or endorsed by Facebook™
     </div>
 
   </div>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1795011125069327');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1795011125069327&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </body>
 </html>
-
