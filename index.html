@@ -1,313 +1,134 @@
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.vip-page,.vip-page *{box-sizing:border-box}
+.vip-page{
+  width:100%;min-height:100vh;padding:16px 12px;
+  display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(ellipse at top,#47320b,#11100b 40%,#050609 80%);
+  font-family:Arial,Helvetica,sans-serif;color:#fff
+}
+.vip-card{
+  width:100%;max-width:400px;padding:25px 20px;
+  text-align:center;position:relative;overflow:hidden;
+  background:linear-gradient(145deg,#191919,#090a0e 65%);
+  border:1px solid #a98a36;border-radius:22px;
+  box-shadow:0 15px 45px #0009,0 0 25px #d7aa2820
+}
+.vip-card:before{
+  content:"";position:absolute;top:0;left:15%;width:70%;height:1px;
+  background:linear-gradient(90deg,transparent,#ffe99a,transparent)
+}
+.vip-label{
+  font-size:10px;font-weight:bold;letter-spacing:2px;
+  line-height:1.7;color:#e9ca70
+}
+.vip-logo{
+  display:block;width:190px;height:190px;max-width:75%;
+  object-fit:contain;margin:18px auto;
+  border-radius:18px;
+  filter:drop-shadow(0 0 18px #e8c24b30)
+}
+.vip-heading{
+  font-size:30px;line-height:1.2;font-weight:900;
+  margin:10px 0;color:#fff
+}
+.vip-heading span{color:#f2d16c}
+.vip-divider{
+  width:65px;height:2px;margin:13px auto 16px;
+  background:linear-gradient(90deg,transparent,#e6c15a,transparent)
+}
+.vip-desc{
+  font-size:14px;line-height:1.7;color:#d0d0d5;
+  margin-bottom:20px
+}
+.vip-features{
+  padding:13px 10px;margin-bottom:24px;
+  border:1px solid #34302a;border-radius:12px;
+  background:linear-gradient(120deg,#171717,#101115);
+  font-size:13px;line-height:2.1;color:#ededed
+}
+.vip-join{
+  display:block;width:100%;padding:16px 10px;border-radius:12px;
+  background:linear-gradient(110deg,#fff0b6,#e4b83f 48%,#ffdf79);
+  color:#171106!important;text-decoration:none;
+  font-size:16px;font-weight:900;letter-spacing:.4px;
+  border:1px solid #ffedb1;
+  box-shadow:0 5px 0 #765315,0 8px 22px #d6a52e30;
+  transition:transform .15s ease
+}
+.vip-join:active{
+  transform:translateY(3px);box-shadow:0 2px 0 #765315
+}
+.vip-join small{
+  display:block;font-size:10px;letter-spacing:1.4px;
+  margin-top:6px
+}
+.vip-risk{
+  font-size:10px;line-height:1.6;color:#85858e;
+  margin-top:20px
+}
+@media(max-width:360px){
+  .vip-page{padding:9px}
+  .vip-card{padding:20px 14px}
+  .vip-logo{width:165px;height:165px}
+  .vip-heading{font-size:26px}
+  .vip-desc{font-size:13px}
+}
+@media(max-height:700px){
+  .vip-page{align-items:flex-start;padding-top:10px;padding-bottom:10px}
+  .vip-card{padding-top:16px;padding-bottom:16px}
+  .vip-logo{width:145px;height:145px;margin:12px auto}
+  .vip-heading{font-size:25px;margin:6px 0}
+  .vip-divider{margin:8px auto 10px}
+  .vip-desc{margin-bottom:12px}
+  .vip-features{padding:8px;margin-bottom:16px}
+  .vip-risk{margin-top:13px}
+}
+</style>
 
-  <title>TRADE WITH GUPTA | Educational Community</title>
-  <meta name="description" content="Join Trade With Gupta for educational market insights, trading concepts and learning updates.">
+<div class="vip-page">
+  <main class="vip-card">
 
-  <meta name="theme-color" content="#101b2d">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <!-- Meta Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window,document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-
-  fbq('init', '2098569020749256');
-  fbq('track', 'PageView');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=2098569020749256&ev=PageView&noscript=1"
-    alt="">
-  </noscript>
-  <!-- End Meta Pixel Code -->
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      min-height: 100vh;
-      padding: 24px 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Inter', sans-serif;
-      color: #f5f7ff;
-      background:
-        radial-gradient(ellipse at 50% 0%, #263e60 0%, transparent 55%),
-        linear-gradient(145deg, #101b2d, #18283d 55%, #101c2c);
-    }
-
-    .page {
-      width: 100%;
-      max-width: 430px;
-      padding: 30px 22px 22px;
-      text-align: center;
-      border: 1px solid rgba(207, 177, 111, 0.28);
-      border-radius: 25px;
-      background: rgba(12, 23, 39, 0.78);
-      box-shadow: 0 22px 60px rgba(0, 0, 0, 0.28);
-    }
-
-    .logo {
-      width: 100px;
-      height: 100px;
-      margin: 0 auto 19px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 27px;
-      border: 2px solid #d9bd7a;
-      background: linear-gradient(145deg, #314965, #15263a);
-      box-shadow: 0 0 30px rgba(217, 189, 122, 0.14);
-      color: #f1d899;
-      font-size: 35px;
-      font-weight: 900;
-      letter-spacing: -2px;
-    }
-
-    h1 {
-      width: 100%;
-      margin: 0 auto 11px;
-      color: #f4d99b;
-      font-size: clamp(21px, 6.2vw, 29px);
-      font-weight: 900;
-      letter-spacing: -1px;
-      line-height: 1.2;
-      white-space: nowrap;
-    }
-
-    .subtitle {
-      max-width: 310px;
-      margin: 0 auto 23px;
-      color: #c0ccdc;
-      font-size: 13px;
-      line-height: 1.7;
-    }
-
-    .divider {
-      width: 58px;
-      height: 3px;
-      margin: 0 auto 23px;
-      border-radius: 10px;
-      background: linear-gradient(90deg, #b99751, #f6e1a5);
-    }
-
-    .section-title {
-      margin-bottom: 8px;
-      color: #f6f7fb;
-      font-size: 20px;
-      font-weight: 800;
-    }
-
-    .section-text {
-      margin-bottom: 19px;
-      color: #aebdd0;
-      font-size: 13px;
-      line-height: 1.7;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-bottom: 23px;
-    }
-
-    .feature {
-      min-height: 76px;
-      padding: 15px 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid rgba(174, 194, 218, 0.13);
-      border-radius: 14px;
-      background: rgba(116, 146, 181, 0.08);
-      color: #e5edf8;
-      font-size: 12px;
-      font-weight: 600;
-      line-height: 1.5;
-    }
-
-    .feature span {
-      display: block;
-      margin-bottom: 5px;
-      font-size: 19px;
-    }
-
-    .join-btn {
-      width: 100%;
-      min-height: 56px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      border: 0;
-      border-radius: 15px;
-      background: linear-gradient(100deg, #e8c77e, #f4dfaa);
-      color: #172438;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 900;
-      letter-spacing: 0.2px;
-      box-shadow: 0 9px 25px rgba(215, 181, 105, 0.15);
-      transition: transform 0.2s ease;
-    }
-
-    .join-btn:active {
-      transform: scale(0.98);
-    }
-
-    .telegram-icon {
-      font-size: 21px;
-    }
-
-    .disclaimer {
-      margin: 18px 0 21px;
-      color: #8fa0b5;
-      font-size: 10px;
-      line-height: 1.7;
-    }
-
-    .footer {
-      padding-top: 15px;
-      border-top: 1px solid rgba(174, 194, 218, 0.13);
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 1.3px;
-    }
-
-    .footer a {
-      color: #e8c77e;
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 1px;
-    }
-
-    @media (max-width: 360px) {
-      .page {
-        padding: 25px 14px 18px;
-      }
-
-      h1 {
-        font-size: 20px;
-        letter-spacing: -0.8px;
-      }
-
-      .logo {
-        width: 88px;
-        height: 88px;
-        font-size: 32px;
-      }
-
-      .feature {
-        font-size: 11px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <main class="page">
-
-    <div class="logo" aria-label="Trade With Gupta logo">TG</div>
-
-    <h1>TRADE WITH GUPTA</h1>
-
-    <p class="subtitle">
-      Learn the concepts. Understand the markets.
-      Build your trading knowledge.
-    </p>
-
-    <div class="divider"></div>
-
-    <h2 class="section-title">Your Journey Starts Here</h2>
-
-    <p class="section-text">
-      A learning community focused on knowledge,
-      discipline and informed decisions.
-    </p>
-
-    <div class="features">
-      <div class="feature">
-        <div><span>📘</span>Trading Education</div>
-      </div>
-
-      <div class="feature">
-        <div><span>📊</span>Market Insights</div>
-      </div>
-
-      <div class="feature">
-        <div><span>🎯</span>Risk Awareness</div>
-      </div>
-
-      <div class="feature">
-        <div><span>🧠</span>Trading Discipline</div>
-      </div>
+    <div class="vip-label">
+      EXCLUSIVE • PREMIUM COMMUNITY
     </div>
 
-    <a
-      class="join-btn"
-      id="telegramJoin"
-      href="https://t.me/+YqyGLn-h9K1iNTY1"
-      target="_blank"
-      rel="noopener noreferrer"
+    <img
+      class="vip-logo"
+      src="https://i.ibb.co/DX0nLDZ/photo-2026-10-14-01-50-29.jpg"
+      alt="VIP Trading Logo"
+      loading="eager"
     >
-      <span class="telegram-icon">✈</span>
-      JOIN FREE TELEGRAM GROUP
-    </a>
 
-    <p class="disclaimer">
-      Educational content only. This community does not provide
-      guaranteed returns or personalized financial advice.
-      Trading involves market risk.
+    <h1 class="vip-heading">
+      VIP <span>TRADING</span>
+    </h1>
+
+    <div class="vip-divider"></div>
+
+    <p class="vip-desc">
+      Discover market insights, learn trading concepts
+      and strengthen your market knowledge with our community.
     </p>
 
-    <footer class="footer">
-      POWERED BY
-      <a href="https://t.me/ADBAGENCY"
-         target="_blank"
-         rel="noopener noreferrer">@ADBAGENCY</a>
-    </footer>
+    <div class="vip-features">
+      📊 &nbsp;Market Insights &amp; Analysis<br>
+      ◈ &nbsp;Trading Education &amp; Concepts<br>
+      ✦ &nbsp;Learn, Connect &amp; Grow
+    </div>
+
+   
+<a class="vip-join"
+   href="https://t.me/+YqyGLn-h9K1iNTY1"
+   target="_blank"
+   rel="noopener noreferrer">
+  &nbsp;JOIN FREE TELEGRAM GROUP<small></small>
+</a>
+
+
+    <p class="vip-risk">
+      Trading involves market risk. Educational content
+      does not guarantee profits.
+    </p>
 
   </main>
-
-  <script>
-    (function () {
-      let subscribeFired = false;
-      const joinButton = document.getElementById('telegramJoin');
-
-      joinButton.addEventListener('click', function () {
-        if (subscribeFired) return;
-        subscribeFired = true;
-
-        if (typeof window.fbq === 'function') {
-          window.fbq('track', 'Subscribe', {
-            value: 100,
-            currency: 'INR'
-          });
-        }
-      });
-    })();
-  </script>
-</body>
-</html>
-```
+</div>
