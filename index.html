@@ -1,22 +1,23 @@
-<!DOCTYPE html>
+L<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#070914">
 
-<title>Trade With Gupta | Join Our Community</title>
+<title>Trade With Gupta | Premium Trading Community</title>
 <meta name="description" content="Explore trading education, market insights and analysis with Trade With Gupta.">
 
-<!-- META PIXEL -->
+<!-- META PIXEL: Add your real Pixel ID -->
 <script>
 !function(f,b,e,v,n,t,s){
 if(f.fbq)return;
 n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;
+if(!f._fbq)n=f;
 n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
+n.queue=[];
+t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)
 }(window,document,'script',
@@ -43,7 +44,6 @@ body{
   min-height:100dvh;
   font-family:Arial,Helvetica,sans-serif;
   color:#fff;
-  -webkit-font-smoothing:antialiased;
 }
 
 .page{
@@ -56,7 +56,7 @@ body{
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  padding:25px 14px;
+  padding:24px 13px;
   background:
     radial-gradient(ellipse at 50% 0%,#243e70 0%,transparent 43%),
     radial-gradient(ellipse at 0% 65%,#18234b 0%,transparent 42%),
@@ -93,15 +93,11 @@ body{
   position:relative;
   overflow:hidden;
   text-align:center;
-  padding:25px 20px 22px;
+  padding:24px 19px 21px;
   border-radius:25px;
   border:1px solid #c4a65d75;
-  background:
-    linear-gradient(150deg,#19233beF,#0c1020f5 52%,#141021f5);
-  box-shadow:
-    0 25px 65px #0009,
-    0 0 35px #4f7dff16,
-    inset 0 1px 0 #ffffff16;
+  background:linear-gradient(150deg,#19233bef,#0c1020f5 52%,#141021f5);
+  box-shadow:0 25px 65px #0009,0 0 35px #4f7dff16,inset 0 1px 0 #ffffff16;
   backdrop-filter:blur(14px);
   -webkit-backdrop-filter:blur(14px);
 }
@@ -113,22 +109,7 @@ body{
   left:8%;
   width:84%;
   height:2px;
-  background:linear-gradient(
-    90deg,transparent,#5ee7ff,#fff,#f8d878,transparent
-  );
-}
-
-.card:after{
-  content:"";
-  position:absolute;
-  width:180px;
-  height:180px;
-  right:-130px;
-  top:100px;
-  border-radius:50%;
-  background:#3b82f620;
-  filter:blur(35px);
-  pointer-events:none;
+  background:linear-gradient(90deg,transparent,#5ee7ff,#fff,#f8d878,transparent);
 }
 
 .top-pill{
@@ -136,32 +117,31 @@ body{
   align-items:center;
   justify-content:center;
   gap:7px;
-  padding:8px 12px;
+  padding:8px 11px;
   border-radius:30px;
   border:1px solid #e4c46a55;
   background:#d8b65d0c;
   color:#f5d98a;
   font-size:9px;
-  line-height:1.4;
   font-weight:800;
-  letter-spacing:1.5px;
+  letter-spacing:1.3px;
 }
 
 .status-dot{
   width:7px;
   height:7px;
+  flex-shrink:0;
   border-radius:50%;
   background:#45f0a6;
   box-shadow:0 0 10px #45f0a6;
-  flex-shrink:0;
 }
 
 .logo-wrap{
   position:relative;
-  width:174px;
-  height:174px;
+  width:165px;
+  height:165px;
   max-width:72%;
-  margin:21px auto 18px;
+  margin:20px auto 17px;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -172,14 +152,7 @@ body{
   position:absolute;
   inset:0;
   border-radius:50%;
-  background:conic-gradient(
-    from 0deg,
-    #4deaff,
-    #526aff,
-    #c16cff,
-    #f6d36d,
-    #4deaff
-  );
+  background:conic-gradient(from 0deg,#4deaff,#526aff,#c16cff,#f6d36d,#4deaff);
   animation:spin 9s linear infinite;
   box-shadow:0 0 24px #6c78ff26;
 }
@@ -207,58 +180,55 @@ body{
   to{transform:rotate(360deg)}
 }
 
+/* ONE-LINE BRAND NAME */
+.heading{
+  width:100%;
+  white-space:nowrap;
+  font-size:clamp(19px,6.4vw,30px);
+  line-height:1.25;
+  font-weight:900;
+  letter-spacing:-.8px;
+  margin:10px auto;
+  color:#fff;
+}
+
+.heading span{
+  display:inline;
+  margin:0;
+  background:linear-gradient(95deg,#fff0b1,#f3cd65,#fff4c9,#c8a044,#ffeaa3);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
 .eyebrow{
   color:#91a9db;
   font-size:10px;
   font-weight:800;
-  letter-spacing:3px;
-  margin-bottom:9px;
-}
-
-.heading{
-  font-size:clamp(27px,7.8vw,35px);
-  line-height:1.12;
-  font-weight:900;
-  letter-spacing:-1px;
-  overflow-wrap:anywhere;
-  color:#fff;
-  text-shadow:0 3px 20px #fff1;
-}
-
-.heading span{
-  display:block;
-  margin-top:5px;
-  background:linear-gradient(
-    95deg,#fff0b1 0%,#f3cd65 32%,#fff4c9 53%,#c8a044 80%,#ffeaa3 100%
-  );
-  -webkit-background-clip:text;
-  background-clip:text;
-  -webkit-text-fill-color:transparent;
-  filter:drop-shadow(0 0 13px #eac75d16);
+  letter-spacing:2.5px;
+  margin-bottom:8px;
 }
 
 .divider{
   width:78px;
   height:2px;
-  margin:17px auto;
+  margin:14px auto;
   border-radius:5px;
-  background:linear-gradient(
-    90deg,transparent,#66eaff,#c3a6ff,#f8d878,transparent
-  );
+  background:linear-gradient(90deg,transparent,#66eaff,#c3a6ff,#f8d878,transparent);
   box-shadow:0 0 12px #7bcbff55;
 }
 
 .desc{
   max-width:310px;
-  margin:0 auto 19px;
+  margin:0 auto 18px;
   font-size:13px;
   line-height:1.8;
   color:#c4ccdf;
 }
 
 .features{
-  padding:13px 12px;
-  margin-bottom:24px;
+  padding:12px 11px;
+  margin-bottom:23px;
   border-radius:15px;
   border:1px solid #7184b52b;
   background:linear-gradient(120deg,#ffffff08,#8b9dff09);
@@ -275,7 +245,7 @@ body{
 }
 
 .feature+.feature{
-  margin-top:12px;
+  margin-top:10px;
 }
 
 .feature-icon{
@@ -308,9 +278,7 @@ body{
   z-index:-1;
   inset:-3px;
   border-radius:18px;
-  background:linear-gradient(
-    100deg,#00eaff,#6484ff,#d86bff,#ffcf63,#00eaff
-  );
+  background:linear-gradient(100deg,#00eaff,#6484ff,#d86bff,#ffcf63,#00eaff);
   background-size:250% 100%;
   filter:blur(9px);
   opacity:.7;
@@ -318,26 +286,19 @@ body{
 }
 
 .join{
-  position:relative;
   display:flex;
   align-items:center;
   justify-content:center;
-  gap:10px;
+  gap:9px;
   width:100%;
-  min-height:62px;
-  padding:12px 8px;
+  min-height:60px;
+  padding:11px 7px;
   border-radius:13px;
   border:1px solid #fff9;
-  background:linear-gradient(
-    105deg,#00d9ef 0%,#5487ff 35%,#9560fa 68%,#d47aff 100%
-  );
-  background-size:180% 100%;
+  background:linear-gradient(105deg,#00d9ef,#5487ff 35%,#9560fa 68%,#d47aff);
   color:#fff;
   text-decoration:none;
-  box-shadow:
-    0 5px 0 #29366d,
-    0 10px 25px #427bff30,
-    inset 0 1px 0 #ffffff65;
+  box-shadow:0 5px 0 #29366d,0 10px 25px #427bff30,inset 0 1px 0 #ffffff65;
   transition:transform .18s ease,filter .18s ease;
   -webkit-tap-highlight-color:transparent;
 }
@@ -345,12 +306,11 @@ body{
 .join:active{
   transform:translateY(3px) scale(.99);
   filter:brightness(1.15);
-  box-shadow:0 2px 0 #29366d;
 }
 
 .telegram-icon{
-  width:31px;
-  height:31px;
+  width:30px;
+  height:30px;
   flex-shrink:0;
   display:flex;
   align-items:center;
@@ -358,15 +318,15 @@ body{
   border-radius:50%;
   background:#ffffff24;
   border:1px solid #ffffff65;
-  font-size:17px;
+  font-size:16px;
 }
 
 .join-text{
   display:block;
-  font-size:13px;
+  font-size:clamp(10px,3.2vw,13px);
   font-weight:900;
   line-height:1.4;
-  letter-spacing:.35px;
+  letter-spacing:.15px;
 }
 
 .join-text small{
@@ -374,7 +334,7 @@ body{
   margin-top:4px;
   font-size:9px;
   font-weight:700;
-  letter-spacing:1.7px;
+  letter-spacing:1.4px;
   color:#f1f5ff;
 }
 
@@ -389,7 +349,7 @@ body{
 }
 
 .risk{
-  margin-top:19px;
+  margin-top:18px;
   font-size:10px;
   line-height:1.8;
   color:#8893ac;
@@ -400,7 +360,7 @@ body{
 }
 
 .footer{
-  margin-top:23px;
+  margin-top:21px;
   text-align:center;
   color:#8b95ac;
   font-size:10px;
@@ -417,39 +377,40 @@ body{
   text-decoration:none;
   font-size:11px;
   font-weight:900;
-  letter-spacing:1.5px;
+  letter-spacing:1.3px;
   background:#ffffff05;
-  transition:background .2s,color .2s;
 }
 
-.footer a:hover{
+.footer a:active{
   background:#f0d58116;
-  color:#fff0b0;
 }
 
 @media(max-width:360px){
-  .page{padding:15px 10px}
-  .card{padding:20px 14px 18px;border-radius:21px}
-  .logo-wrap{width:145px;height:145px;margin:17px auto}
+  .page{padding:13px 9px}
+  .card{padding:19px 12px 17px;border-radius:21px}
+  .logo-wrap{width:140px;height:140px;margin:16px auto}
+  .heading{font-size:clamp(18px,6.3vw,23px);letter-spacing:-.65px}
   .desc{font-size:12px}
-  .features{padding:11px 9px}
-  .join-text{font-size:12px}
-  .join{gap:7px}
-  .footer{margin-top:18px}
+  .features{padding:10px 8px}
+  .join{gap:6px}
+  .join-text{font-size:10px}
+  .join-text small{font-size:8px;letter-spacing:1px}
+  .footer{margin-top:17px}
 }
 
-@media(max-height:720px){
-  .page{justify-content:flex-start;padding-top:13px;padding-bottom:13px}
-  .card{padding-top:17px;padding-bottom:16px}
-  .logo-wrap{width:112px;height:112px;margin:12px auto}
-  .eyebrow{margin-bottom:6px}
-  .divider{margin:11px auto}
-  .desc{margin-bottom:13px}
-  .features{padding:9px 10px;margin-bottom:18px}
-  .feature+.feature{margin-top:7px}
-  .join{min-height:56px}
-  .risk{margin-top:14px}
-  .footer{margin-top:15px}
+@media(max-height:700px){
+  .page{justify-content:flex-start;padding-top:12px;padding-bottom:12px}
+  .card{padding-top:15px;padding-bottom:15px}
+  .logo-wrap{width:105px;height:105px;margin:11px auto}
+  .eyebrow{margin-bottom:5px}
+  .heading{margin:6px auto}
+  .divider{margin:9px auto}
+  .desc{margin-bottom:11px}
+  .features{padding:8px 10px;margin-bottom:16px}
+  .feature+.feature{margin-top:6px}
+  .join{min-height:53px}
+  .risk{margin-top:12px}
+  .footer{margin-top:13px}
 }
 
 @media(prefers-reduced-motion:reduce){
@@ -464,7 +425,6 @@ body{
 <body>
 
 <main class="page">
-
   <div class="glow glow-one"></div>
   <div class="glow glow-two"></div>
 
@@ -486,10 +446,7 @@ body{
 
     <div class="eyebrow">LEARN • ANALYZE • GROW</div>
 
-    <h1 class="heading">
-      TRADE WITH
-      <span>GUPTA</span>
-    </h1>
+    <h1 class="heading">TRADE WITH <span>GUPTA</span></h1>
 
     <div class="divider"></div>
 
@@ -499,7 +456,6 @@ body{
     </p>
 
     <div class="features">
-
       <div class="feature">
         <span class="feature-icon">↗</span>
         <span>Market Insights &amp; Analysis</span>
@@ -514,7 +470,6 @@ body{
         <span class="feature-icon">✦</span>
         <span>Learn, Connect &amp; Grow</span>
       </div>
-
     </div>
 
     <div class="join-wrap">
@@ -542,15 +497,13 @@ body{
   </section>
 
   <footer class="footer">
-    DESIGNED WITH CARE
-    <br>
+    DESIGNED WITH CARE<br>
     <a
       href="https://t.me/YOUR_ADB_CHANNEL"
       target="_blank"
       rel="noopener noreferrer"
     >POWERED BY ADB AGENCY ↗</a>
   </footer>
-
 </main>
 
 <script>
@@ -558,12 +511,12 @@ body{
   const joinButton = document.getElementById('telegramJoin');
   let subscribeFired = false;
 
-  joinButton.addEventListener('click', function(){
+  joinButton.addEventListener('click',function(){
     if(subscribeFired) return;
     subscribeFired = true;
 
     if(typeof window.fbq === 'function'){
-      window.fbq('track', 'Subscribe');
+      window.fbq('track','Subscribe');
     }
   });
 })();
