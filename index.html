@@ -2,534 +2,312 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Trade With Gupta | Trading Community</title>
-<meta name="description" content="Trade With Gupta — trading education, market insights and community learning.">
-<meta name="theme-color" content="#070807">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Meta Pixel -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];
-t=b.createElement(e);t.async=!0;t.src=v;
-s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}
-(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  <title>TRADE WITH GUPTA | Educational Community</title>
+  <meta name="description" content="Join Trade With Gupta for educational market insights, trading concepts and learning updates.">
 
-fbq('init','2098569020749256');
-fbq('track','PageView');
-</script>
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2098569020749256&ev=PageView&noscript=1"
-alt="">
-</noscript>
-<!-- End Meta Pixel -->
+  <meta name="theme-color" content="#101b2d">
 
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-:root{
-  --gold:#f5cf66;
-  --gold2:#bd8c27;
-  --text:#fffdf6;
-  --muted:#a9aca7;
-}
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
 
-html{scroll-behavior:smooth}
+  fbq('init', '2098569020749256');
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2098569020749256&ev=PageView&noscript=1"
+    alt="">
+  </noscript>
+  <!-- End Meta Pixel Code -->
 
-body{
-  min-height:100vh;
-  color:var(--text);
-  font-family:Arial,Helvetica,sans-serif;
-  background:
-    radial-gradient(ellipse at 50% 8%,#3a2b103d,transparent 38%),
-    radial-gradient(ellipse at 0% 50%,#17372a20,transparent 40%),
-    linear-gradient(155deg,#111310 0%,#070807 48%,#030504 100%);
-}
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-.page{
-  width:100%;
-  max-width:500px;
-  min-height:100vh;
-  margin:auto;
-  padding:15px 17px 12px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  gap:13px;
-}
+    body {
+      min-height: 100vh;
+      padding: 24px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', sans-serif;
+      color: #f5f7ff;
+      background:
+        radial-gradient(ellipse at 50% 0%, #263e60 0%, transparent 55%),
+        linear-gradient(145deg, #101b2d, #18283d 55%, #101c2c);
+    }
 
-.top{
-  text-align:center;
-  padding-top:2px;
-}
+    .page {
+      width: 100%;
+      max-width: 430px;
+      padding: 30px 22px 22px;
+      text-align: center;
+      border: 1px solid rgba(207, 177, 111, 0.28);
+      border-radius: 25px;
+      background: rgba(12, 23, 39, 0.78);
+      box-shadow: 0 22px 60px rgba(0, 0, 0, 0.28);
+    }
 
-.logo{
-  width:86px;
-  height:86px;
-  margin:0 auto 12px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  position:relative;
-  border-radius:25px;
-  border:1px solid #e8c45a99;
-  background:
-    radial-gradient(circle at 50% 35%,#665020 0%,#211b0d 48%,#0b0d0a 100%);
-  box-shadow:0 0 30px #e9bd4930,inset 0 0 20px #e9bd4910;
-}
+    .logo {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 19px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 27px;
+      border: 2px solid #d9bd7a;
+      background: linear-gradient(145deg, #314965, #15263a);
+      box-shadow: 0 0 30px rgba(217, 189, 122, 0.14);
+      color: #f1d899;
+      font-size: 35px;
+      font-weight: 900;
+      letter-spacing: -2px;
+    }
 
-.logo:before{
-  content:"";
-  position:absolute;
-  inset:6px;
-  border:1px solid #f5cf664f;
-  border-radius:19px;
-}
+    h1 {
+      width: 100%;
+      margin: 0 auto 11px;
+      color: #f4d99b;
+      font-size: clamp(21px, 6.2vw, 29px);
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
 
-.logo-symbol{
-  font-size:37px;
-  font-weight:900;
-  line-height:1;
-  color:var(--gold);
-  text-shadow:0 0 18px #f5cf6670;
-}
+    .subtitle {
+      max-width: 310px;
+      margin: 0 auto 23px;
+      color: #c0ccdc;
+      font-size: 13px;
+      line-height: 1.7;
+    }
 
-.logo-caption{
-  position:absolute;
-  bottom:12px;
-  font-size:7px;
-  font-weight:bold;
-  letter-spacing:2px;
-  color:#fff1bc;
-}
+    .divider {
+      width: 58px;
+      height: 3px;
+      margin: 0 auto 23px;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #b99751, #f6e1a5);
+    }
 
-h1{
-  font-size:clamp(34px,9vw,49px);
-  font-weight:950;
-  letter-spacing:-1.6px;
-  line-height:1.03;
-  text-shadow:0 3px 24px #000;
-}
+    .section-title {
+      margin-bottom: 8px;
+      color: #f6f7fb;
+      font-size: 20px;
+      font-weight: 800;
+    }
 
-h1 span{color:var(--gold)}
+    .section-text {
+      margin-bottom: 19px;
+      color: #aebdd0;
+      font-size: 13px;
+      line-height: 1.7;
+    }
 
-.tagline{
-  margin-top:9px;
-  color:#c3b58f;
-  font-size:9px;
-  font-weight:bold;
-  letter-spacing:2.2px;
-}
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 23px;
+    }
 
-.divider{
-  width:66px;
-  height:2px;
-  margin:13px auto 0;
-  background:linear-gradient(90deg,transparent,var(--gold),transparent);
-}
+    .feature {
+      min-height: 76px;
+      padding: 15px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(174, 194, 218, 0.13);
+      border-radius: 14px;
+      background: rgba(116, 146, 181, 0.08);
+      color: #e5edf8;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
 
-.desc{
-  max-width:350px;
-  margin:11px auto 0;
-  font-size:12px;
-  line-height:1.7;
-  color:#b9beb8;
-}
+    .feature span {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 19px;
+    }
 
-.chart{
-  height:61px;
-  position:relative;
-  overflow:hidden;
-  border:1px solid #ffffff13;
-  border-radius:12px;
-  background:
-    linear-gradient(#ffffff08 1px,transparent 1px),
-    linear-gradient(90deg,#ffffff08 1px,transparent 1px),
-    linear-gradient(130deg,#121a14,#080b09);
-  background-size:25px 18px,25px 18px,auto;
-}
+    .join-btn {
+      width: 100%;
+      min-height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 0;
+      border-radius: 15px;
+      background: linear-gradient(100deg, #e8c77e, #f4dfaa);
+      color: #172438;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 900;
+      letter-spacing: 0.2px;
+      box-shadow: 0 9px 25px rgba(215, 181, 105, 0.15);
+      transition: transform 0.2s ease;
+    }
 
-.chart-label{
-  position:absolute;
-  top:7px;
-  left:10px;
-  z-index:2;
-  color:#929e93;
-  font-size:8px;
-  letter-spacing:1.2px;
-}
+    .join-btn:active {
+      transform: scale(0.98);
+    }
 
-.bars{
-  position:absolute;
-  inset:15px 12px 6px;
-  display:flex;
-  align-items:flex-end;
-  justify-content:space-around;
-  gap:4px;
-}
+    .telegram-icon {
+      font-size: 21px;
+    }
 
-.bar{
-  position:relative;
-  width:7px;
-  height:var(--h);
-  background:#00bc7a;
-  border-radius:1px;
-}
+    .disclaimer {
+      margin: 18px 0 21px;
+      color: #8fa0b5;
+      font-size: 10px;
+      line-height: 1.7;
+    }
 
-.bar:after{
-  content:"";
-  position:absolute;
-  width:2px;
-  height:calc(100% + 8px);
-  background:inherit;
-  left:50%;
-  top:-4px;
-}
+    .footer {
+      padding-top: 15px;
+      border-top: 1px solid rgba(174, 194, 218, 0.13);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.3px;
+    }
 
-.red{background:#db5550}
+    .footer a {
+      color: #e8c77e;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
 
-.section-title{
-  text-align:center;
-  font-size:18px;
-  margin-bottom:5px;
-  font-weight:850;
-}
+    @media (max-width: 360px) {
+      .page {
+        padding: 25px 14px 18px;
+      }
 
-.section-sub{
-  text-align:center;
-  font-size:10px;
-  color:var(--muted);
-  margin-bottom:11px;
-}
+      h1 {
+        font-size: 20px;
+        letter-spacing: -0.8px;
+      }
 
-.features{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:8px;
-}
+      .logo {
+        width: 88px;
+        height: 88px;
+        font-size: 32px;
+      }
 
-.feature{
-  min-height:67px;
-  display:flex;
-  align-items:center;
-  gap:9px;
-  padding:10px;
-  border:1px solid #ffffff13;
-  border-radius:12px;
-  background:linear-gradient(140deg,#171a15,#0b0e0b);
-}
-
-.icon{
-  width:32px;
-  height:32px;
-  flex-shrink:0;
-  display:grid;
-  place-items:center;
-  border:1px solid #e5bd5c55;
-  border-radius:10px;
-  background:#e5bd5c0b;
-  font-size:17px;
-}
-
-.feature h3{
-  font-size:10px;
-  margin-bottom:4px;
-}
-
-.feature p{
-  font-size:9px;
-  line-height:1.45;
-  color:#a9b0a9;
-}
-
-.join-btn{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  width:100%;
-  min-height:53px;
-  margin-top:12px;
-  padding:13px 10px;
-  border:1px solid #ffedac;
-  border-radius:12px;
-  background:linear-gradient(110deg,#fff0b6,#eac34f 50%,#f9d878);
-  box-shadow:0 4px 0 #735217,0 9px 24px #d5a62d1c;
-  color:#171208;
-  text-decoration:none;
-  font-size:13px;
-  font-weight:900;
-  letter-spacing:.35px;
-  transition:filter .2s,transform .2s;
-}
-
-.join-btn:hover{filter:brightness(1.07)}
-.join-btn:active{transform:translateY(2px)}
-
-.telegram-icon{
-  width:27px;
-  height:27px;
-  display:grid;
-  place-items:center;
-  border-radius:50%;
-  background:#159cdb;
-  color:#fff;
-  font-size:15px;
-}
-
-.arrow{font-size:18px}
-
-.trust{
-  display:flex;
-  justify-content:space-around;
-  gap:7px;
-  padding:7px 0 0;
-  color:#d5d9d2;
-  font-size:9px;
-  text-align:center;
-}
-
-.trust span{
-  display:block;
-  color:var(--gold);
-  font-size:15px;
-  margin-bottom:3px;
-}
-
-.quote{
-  text-align:center;
-  color:var(--gold);
-  font-size:15px;
-  font-weight:bold;
-  font-style:italic;
-  padding:1px 0;
-}
-
-.quote small{
-  display:block;
-  margin-top:5px;
-  color:#929a91;
-  font-size:8px;
-  font-weight:normal;
-  font-style:normal;
-  letter-spacing:1.3px;
-}
-
-footer{
-  text-align:center;
-  padding:8px 0 2px;
-  border-top:1px solid #ffffff13;
-}
-
-.risk{
-  max-width:390px;
-  margin:0 auto 7px;
-  color:#7f8980;
-  font-size:8px;
-  line-height:1.6;
-}
-
-.agency{
-  color:var(--gold);
-  text-decoration:none;
-  font-size:9px;
-  font-weight:bold;
-  letter-spacing:1.3px;
-}
-
-@media(max-height:740px){
-  .page{gap:9px;padding-top:10px;padding-bottom:9px}
-  .logo{width:70px;height:70px;margin-bottom:9px;border-radius:20px}
-  .logo:before{inset:5px;border-radius:15px}
-  .logo-symbol{font-size:30px}
-  .logo-caption{bottom:9px;font-size:6px}
-  h1{font-size:40px}
-  .tagline{margin-top:6px}
-  .divider{margin-top:9px}
-  .desc{margin-top:7px;font-size:11px}
-  .chart{height:48px}
-  .section-title{font-size:16px}
-  .section-sub{margin-bottom:7px}
-  .feature{min-height:59px;padding:8px}
-  .join-btn{margin-top:9px;min-height:48px}
-  .trust{padding-top:3px}
-  .quote{font-size:13px}
-}
-
-@media(max-width:350px){
-  .page{padding-left:11px;padding-right:11px}
-  h1{font-size:35px}
-  .feature{gap:6px;padding:7px}
-  .feature h3{font-size:9px}
-  .feature p{font-size:8px}
-  .join-btn{font-size:11px}
-}
-
-@media(prefers-reduced-motion:reduce){
-  *,*:before,*:after{transition:none!important}
-}
-</style>
+      .feature {
+        font-size: 11px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-<div class="page">
+  <main class="page">
 
-  <section class="top">
+    <div class="logo" aria-label="Trade With Gupta logo">TG</div>
 
-    <!-- Text-based logo; replace this block with your actual logo if desired -->
-    <div class="logo" aria-label="Trade With Gupta logo">
-      <div class="logo-symbol">TG</div>
-      <div class="logo-caption">TRADING</div>
-    </div>
+    <h1>TRADE WITH GUPTA</h1>
 
-    <h1>TRADE WITH <span>GUPTA</span></h1>
-
-    <div class="tagline">LEARN • ANALYZE • GROW</div>
-    <div class="divider"></div>
-
-    <p class="desc">
-      Explore market insights, understand chart patterns
-      and grow your trading knowledge with our community.
+    <p class="subtitle">
+      Learn the concepts. Understand the markets.
+      Build your trading knowledge.
     </p>
 
-  </section>
+    <div class="divider"></div>
 
-  <div class="chart" aria-hidden="true">
-    <div class="chart-label">MARKET MOVEMENT • ILLUSTRATION</div>
-    <div class="bars">
-      <i class="bar" style="--h:25%"></i>
-      <i class="bar red" style="--h:40%"></i>
-      <i class="bar" style="--h:34%"></i>
-      <i class="bar" style="--h:55%"></i>
-      <i class="bar red" style="--h:42%"></i>
-      <i class="bar" style="--h:62%"></i>
-      <i class="bar" style="--h:51%"></i>
-      <i class="bar red" style="--h:44%"></i>
-      <i class="bar" style="--h:75%"></i>
-      <i class="bar" style="--h:64%"></i>
-      <i class="bar red" style="--h:55%"></i>
-      <i class="bar" style="--h:80%"></i>
-      <i class="bar" style="--h:70%"></i>
-      <i class="bar red" style="--h:62%"></i>
-      <i class="bar" style="--h:90%"></i>
-      <i class="bar" style="--h:80%"></i>
-      <i class="bar red" style="--h:72%"></i>
-      <i class="bar" style="--h:95%"></i>
-      <i class="bar" style="--h:85%"></i>
-      <i class="bar" style="--h:100%"></i>
-    </div>
-  </div>
-
-  <section>
     <h2 class="section-title">Your Journey Starts Here</h2>
-    <p class="section-sub">
-      Learn the concepts. Understand the market. Grow.
+
+    <p class="section-text">
+      A learning community focused on knowledge,
+      discipline and informed decisions.
     </p>
 
     <div class="features">
+      <div class="feature">
+        <div><span>📘</span>Trading Education</div>
+      </div>
 
-      <article class="feature">
-        <div class="icon">📈</div>
-        <div>
-          <h3>Market Insights</h3>
-          <p>Explore charts and market movements.</p>
-        </div>
-      </article>
+      <div class="feature">
+        <div><span>📊</span>Market Insights</div>
+      </div>
 
-      <article class="feature">
-        <div class="icon">🎯</div>
-        <div>
-          <h3>Trading Education</h3>
-          <p>Learn concepts and risk management.</p>
-        </div>
-      </article>
+      <div class="feature">
+        <div><span>🎯</span>Risk Awareness</div>
+      </div>
 
-      <article class="feature">
-        <div class="icon">💬</div>
-        <div>
-          <h3>Community Support</h3>
-          <p>Connect and learn together.</p>
-        </div>
-      </article>
-
-      <article class="feature">
-        <div class="icon">💡</div>
-        <div>
-          <h3>Learn &amp; Grow</h3>
-          <p>Build knowledge step by step.</p>
-        </div>
-      </article>
-
+      <div class="feature">
+        <div><span>🧠</span>Trading Discipline</div>
+      </div>
     </div>
 
-    <!-- Single Telegram Join Button -->
-    <a class="join-btn"
-       href="https://t.me/+YqyGLn-h9K1iNTY1"
-       target="_blank"
-       rel="noopener noreferrer">
-      <span class="telegram-icon">➤</span>
+    <a
+      class="join-btn"
+      id="telegramJoin"
+      href="https://t.me/+YqyGLn-h9K1iNTY1"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span class="telegram-icon">✈</span>
       JOIN FREE TELEGRAM GROUP
-      <span class="arrow">→</span>
     </a>
 
-  </section>
-
-  <div class="trust">
-    <div><span>◈</span>Education First</div>
-    <div><span>↗</span>Keep Learning</div>
-    <div><span>◎</span>Community</div>
-  </div>
-
-  <div class="quote">
-    Knowledge Is the Real Power.
-    <small>LEARN SMART • THINK CLEAR • MANAGE RISK</small>
-  </div>
-
-  <footer>
-    <p class="risk">
-      Educational content only. Trading involves financial risk and
-      losses are possible. No profits are guaranteed. Do your own research.
+    <p class="disclaimer">
+      Educational content only. This community does not provide
+      guaranteed returns or personalized financial advice.
+      Trading involves market risk.
     </p>
 
-    <a class="agency"
-       href="https://t.me/ADBAGENCY"
-       target="_blank"
-       rel="noopener noreferrer">
-      ✦ POWERED BY @ADBAGENCY ✦
-    </a>
-  </footer>
+    <footer class="footer">
+      POWERED BY
+      <a href="https://t.me/ADBAGENCY"
+         target="_blank"
+         rel="noopener noreferrer">@ADBAGENCY</a>
+    </footer>
 
-</div>
+  </main>
 
-<!-- Subscribe: maximum once per page load -->
-<script>
-(function(){
-  let subscribeFired = false;
-  const joinButton = document.querySelector('.join-btn');
+  <script>
+    (function () {
+      let subscribeFired = false;
+      const joinButton = document.getElementById('telegramJoin');
 
-  if(!joinButton) return;
+      joinButton.addEventListener('click', function () {
+        if (subscribeFired) return;
+        subscribeFired = true;
 
-  joinButton.addEventListener('click',function(){
-    if(subscribeFired) return;
-    subscribeFired = true;
-
-    if(typeof window.fbq === 'function'){
-      window.fbq('track','Subscribe',{
-        value:100,
-        currency:'INR'
+        if (typeof window.fbq === 'function') {
+          window.fbq('track', 'Subscribe', {
+            value: 100,
+            currency: 'INR'
+          });
+        }
       });
-    }
-  });
-})();
-</script>
-
+    })();
+  </script>
 </body>
 </html>
 ```
