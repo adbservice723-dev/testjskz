@@ -1,600 +1,267 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Trade With Gupta | Trading Learning Community</title>
-<meta name="description" content="Join Trade With Gupta for market insights, trading education, chart analysis and a community focused on learning.">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trade With Gupta | Trading Community</title>
 <meta name="theme-color" content="#050807">
+<meta name="description" content="Trade With Gupta — trading education, market insights and community learning.">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];
+t=b.createElement(e);t.async=!0;t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','2098569020749256');
+fbq('track','PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2098569020749256&ev=PageView&noscript=1"
+alt="">
+</noscript>
+<!-- End Meta Pixel Code -->
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-
-:root{
-  --gold:#ffd34e;
-  --gold2:#f2a900;
-  --bg:#050807;
-  --text:#f7f7f7;
-  --muted:#a9b3b2;
-  --green:#00dc8a;
-}
-
-html{scroll-behavior:smooth}
-
+:root{--gold:#ffd34e;--bg:#050807;--muted:#aab5b0}
 body{
-  background:var(--bg);
-  color:var(--text);
-  font-family:Arial,Helvetica,sans-serif;
-  overflow-x:hidden;
+  background:radial-gradient(ellipse at top,#1b190d,#050807 65%);
+  color:#fff;font-family:Arial,Helvetica,sans-serif;min-height:100vh
 }
-
-body:before{
-  content:"";
-  position:fixed;
-  inset:0;
-  pointer-events:none;
-  z-index:-1;
-  background:
-    radial-gradient(ellipse at 15% 10%,#063b291c,transparent 35%),
-    radial-gradient(ellipse at 90% 20%,#a56a101c,transparent 32%);
-}
-
 a{-webkit-tap-highlight-color:transparent}
-
-.container{
-  width:min(1120px,100%);
-  margin:auto;
-  padding-left:22px;
-  padding-right:22px;
+.page{
+  width:100%;max-width:510px;min-height:100vh;
+  margin:auto;padding:12px 16px;
+  display:flex;flex-direction:column;justify-content:center;gap:12px
 }
-
 header{
-  padding:21px 0;
-  border-bottom:1px solid #ffffff12;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:4px 0 10px;border-bottom:1px solid #ffffff17
 }
-
-.nav{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:15px;
-}
-
-.brand{
-  font-size:17px;
-  font-weight:900;
-  letter-spacing:1px;
-}
-
+.brand{font-size:15px;font-weight:900;letter-spacing:1px}
 .brand span{color:var(--gold)}
-
-.nav-tag{
-  font-size:10px;
-  color:var(--gold);
-  letter-spacing:1.5px;
-  border:1px solid #ffd34e40;
-  padding:9px 12px;
-  border-radius:30px;
-}
-
-.hero{
-  position:relative;
-  padding-top:70px;
-  padding-bottom:46px;
-  text-align:center;
-  overflow:hidden;
-}
-
-.hero:before{
-  content:"";
-  position:absolute;
-  width:390px;
-  height:390px;
-  left:50%;
-  top:30px;
-  transform:translateX(-50%);
-  background:#f4b5000c;
-  filter:blur(75px);
-  border-radius:50%;
-  pointer-events:none;
-}
-
+.tag{font-size:9px;color:var(--gold);letter-spacing:1.2px}
+.hero{text-align:center;padding:5px 0 0}
 .eyebrow{
-  position:relative;
-  display:inline-flex;
-  align-items:center;
-  gap:9px;
-  color:var(--gold);
-  font-size:11px;
-  font-weight:800;
-  letter-spacing:3px;
-  margin-bottom:22px;
+  color:var(--gold);font-size:9px;letter-spacing:2px;
+  font-weight:bold;margin-bottom:9px
 }
-
-.live-dot{
-  height:7px;
-  width:7px;
-  border-radius:50%;
-  background:var(--green);
-  box-shadow:0 0 12px var(--green);
+h1{font-size:clamp(42px,12vw,65px);line-height:.95;letter-spacing:-2px}
+h1 small{
+  display:block;color:#fff;font-size:.37em;
+  letter-spacing:2px;margin-bottom:7px
 }
-
-h1{
-  position:relative;
-  font-size:clamp(44px,8.5vw,88px);
-  line-height:.98;
-  letter-spacing:-3px;
-  font-weight:950;
+h1 span{
+  display:block;color:var(--gold);
+  text-shadow:0 0 25px #ffd34e30
 }
-
-h1 .script{
-  display:block;
-  color:#fff;
-  font-size:.46em;
-  letter-spacing:1px;
-  font-weight:600;
-  margin-bottom:12px;
+.desc{
+  font-size:12px;line-height:1.6;color:#b7c0bb;
+  max-width:340px;margin:10px auto 0
 }
-
-h1 .gold{
-  display:block;
-  color:var(--gold);
-  text-shadow:0 0 38px #ffc72e28;
-}
-
-.hero-desc{
-  position:relative;
-  max-width:570px;
-  margin:23px auto 0;
-  font-size:16px;
-  line-height:1.8;
-  color:#bac3c1;
-}
-
-.chart-panel{
-  position:relative;
-  max-width:800px;
-  height:155px;
-  margin:36px auto 0;
-  overflow:hidden;
-  border:1px solid #ffffff12;
-  border-radius:18px;
+.chart{
+  height:64px;position:relative;overflow:hidden;
+  border:1px solid #ffffff12;border-radius:11px;
   background:
-    linear-gradient(#ffffff08 1px,transparent 1px),
-    linear-gradient(90deg,#ffffff08 1px,transparent 1px),
-    linear-gradient(130deg,#101b17,#090d0c);
-  background-size:40px 30px,40px 30px,auto;
-  box-shadow:0 15px 55px #0007;
+    linear-gradient(#ffffff09 1px,transparent 1px),
+    linear-gradient(90deg,#ffffff09 1px,transparent 1px),
+    #0a100d;
+  background-size:25px 18px
 }
-
-.chart-label{
-  position:absolute;
-  left:17px;
-  top:14px;
-  color:#8b9993;
-  font-size:10px;
-  letter-spacing:1.7px;
+.bars{
+  position:absolute;inset:10px 10px 7px;
+  display:flex;align-items:flex-end;justify-content:space-around;gap:4px
 }
-
-.chart-bars{
-  position:absolute;
-  inset:35px 13px 12px;
-  display:flex;
-  align-items:flex-end;
-  justify-content:space-around;
-  gap:5px;
+.bar{width:7px;height:var(--h);background:#00ce86;border-radius:1px}
+.bar:after{
+  content:"";display:block;width:2px;height:calc(100% + 9px);
+  background:inherit;margin:-4px auto 0
 }
-
-.bar{
-  position:relative;
-  width:clamp(7px,2.1%,15px);
-  height:var(--h);
-  background:#00c985;
-  border-radius:2px;
-  opacity:.85;
+.red{background:#e65353}
+.chart-title{
+  position:absolute;top:6px;left:10px;z-index:2;
+  color:#9daaa3;font-size:8px;letter-spacing:1px
 }
-
-.bar:before{
-  content:"";
-  position:absolute;
-  top:-9px;
-  left:40%;
-  width:2px;
-  height:calc(100% + 18px);
-  background:inherit;
+.section-title{text-align:center;font-size:18px;margin-bottom:4px}
+.section-sub{
+  color:var(--muted);text-align:center;font-size:10px;margin-bottom:10px
 }
-
-.bar.red{background:#ef5350}
-
-.chart-line{
-  position:absolute;
-  left:4%;
-  right:4%;
-  top:44%;
-  height:2px;
-  background:linear-gradient(90deg,transparent,#00dc8a,#ffd34e);
-  transform:rotate(-9deg);
-  box-shadow:0 0 10px #00dc8a77;
-}
-
-.chart-line:after{
-  content:"↗";
-  position:absolute;
-  right:-2px;
-  top:-19px;
-  color:var(--gold);
-  font-size:23px;
-}
-
-.section{
-  padding-top:24px;
-  padding-bottom:42px;
-}
-
-.section-title{
-  text-align:center;
-  font-size:24px;
-  font-weight:850;
-  margin-bottom:9px;
-}
-
-.section-subtitle{
-  text-align:center;
-  font-size:13px;
-  line-height:1.7;
-  color:var(--muted);
-  margin-bottom:25px;
-}
-
-.features{
-  display:grid;
-  grid-template-columns:repeat(4,minmax(0,1fr));
-  gap:13px;
-}
-
+.features{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .feature{
-  padding:24px 16px;
-  text-align:center;
-  border:1px solid #ffffff14;
-  border-radius:17px;
-  background:linear-gradient(145deg,#111714,#090c0b);
-  transition:transform .2s,border-color .2s;
+  display:flex;align-items:center;gap:10px;padding:11px 10px;
+  border:1px solid #ffffff16;border-radius:11px;
+  background:linear-gradient(135deg,#151914,#0b0e0c)
 }
-
-.feature:hover{
-  transform:translateY(-4px);
-  border-color:#ffd34e65;
+.icon{
+  flex-shrink:0;width:34px;height:34px;display:grid;place-items:center;
+  border:1px solid #ffd34e66;border-radius:10px;color:var(--gold);font-size:18px
 }
-
-.feature-icon{
-  width:53px;
-  height:53px;
-  display:grid;
-  place-items:center;
-  margin:0 auto 16px;
-  border:1px solid #ffd34e80;
-  border-radius:16px;
-  background:#ffd34e0d;
-  font-size:25px;
-}
-
-.feature h3{
-  font-size:14px;
-  line-height:1.45;
-  margin-bottom:9px;
-}
-
-.feature p{
-  font-size:12px;
-  line-height:1.75;
-  color:#aab5b0;
-}
-
-.join-section{
-  padding:13px 22px 38px;
-  text-align:center;
-}
-
-.join-card{
-  max-width:760px;
-  margin:auto;
-  padding:30px 22px;
-  border:1px solid #ffd34e50;
-  border-radius:23px;
-  background:
-    radial-gradient(ellipse at top,#80600f1c,transparent 65%),
-    #0a0e0c;
-  box-shadow:0 18px 60px #0006;
-}
-
-.join-card h2{
-  font-size:clamp(23px,4vw,34px);
-  margin-bottom:10px;
-}
-
-.join-card p{
-  font-size:13px;
-  line-height:1.8;
-  color:#aeb8b3;
-  margin-bottom:23px;
-}
-
+.feature h3{font-size:11px;margin-bottom:4px}
+.feature p{font-size:9px;line-height:1.45;color:#aeb8b2}
 .join-btn{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:12px;
-  width:100%;
-  max-width:490px;
-  min-height:61px;
-  margin:0 auto;
-  padding:16px 18px;
-  border-radius:13px;
-  color:#171106;
-  text-decoration:none;
-  font-size:15px;
-  font-weight:900;
-  letter-spacing:.35px;
-  background:linear-gradient(110deg,#fff0a9,#ffd34e 50%,#f3a900);
-  border:1px solid #ffed9a;
-  box-shadow:0 5px 0 #89600b,0 12px 30px #ffc72e20;
-  transition:transform .2s,filter .2s;
+  display:flex;align-items:center;justify-content:center;gap:9px;
+  width:100%;min-height:48px;padding:12px 10px;
+  border:1px solid #fff0a1;border-radius:11px;
+  background:linear-gradient(110deg,#fff0a9,#ffd34e 55%,#f3a900);
+  color:#171106;text-decoration:none;text-align:center;
+  font-size:12px;font-weight:900;letter-spacing:.25px;
+  box-shadow:0 4px 0 #805b0d,0 8px 22px #ffc72e15;
+  transition:filter .2s,transform .2s
 }
-
-.join-btn:hover{
-  filter:brightness(1.08);
-  transform:translateY(-2px);
-}
-
+.join-btn:hover{filter:brightness(1.08)}
 .join-btn:active{transform:translateY(2px)}
-
-.telegram-icon{
-  display:grid;
-  place-items:center;
-  width:31px;
-  height:31px;
-  flex-shrink:0;
-  border-radius:50%;
-  color:white;
-  background:#159cdb;
-  font-size:17px;
+.telegram{
+  display:grid;place-items:center;width:24px;height:24px;
+  border-radius:50%;background:#159cdb;color:#fff;font-size:13px;flex-shrink:0
 }
-
-.trust-row{
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:12px;
-  max-width:700px;
-  margin:28px auto 0;
+.arrow{font-size:17px}
+.primary-join{margin-top:11px}
+.secondary-join{margin-top:10px}
+.trust{
+  display:flex;justify-content:space-around;gap:5px;
+  padding:5px 0;color:#d9dfda;text-align:center;font-size:9px;line-height:1.5
 }
-
-.trust-item{
-  color:#e1e7e3;
-  font-size:11px;
-  line-height:1.6;
-}
-
-.trust-item span{
-  display:block;
-  color:var(--gold);
-  font-size:19px;
-  margin-bottom:6px;
-}
-
-.quote{
-  padding:26px 15px 32px;
-  text-align:center;
-  color:var(--gold);
-  font-size:clamp(21px,4vw,30px);
-  font-weight:800;
-  font-style:italic;
-  line-height:1.5;
-}
-
+.trust span{display:block;color:var(--gold);font-size:14px;margin-bottom:2px}
+.quote{text-align:center;color:var(--gold);font-size:15px;font-weight:bold;font-style:italic;padding:1px 0}
 .quote small{
-  display:block;
-  color:#929d97;
-  font-size:11px;
-  font-style:normal;
-  font-weight:400;
-  margin-top:8px;
-  letter-spacing:1.5px;
+  display:block;color:#9aa49e;font-size:8px;font-weight:normal;
+  font-style:normal;letter-spacing:1px;margin-top:5px
 }
-
-footer{
-  padding:23px 20px 27px;
-  text-align:center;
-  border-top:1px solid #ffffff12;
-}
-
+footer{text-align:center;padding:8px 0 2px;border-top:1px solid #ffffff13}
 .risk{
-  max-width:650px;
-  margin:0 auto 20px;
-  color:#808c85;
-  font-size:10px;
-  line-height:1.8;
+  color:#7f8983;font-size:8px;line-height:1.5;
+  max-width:390px;margin:0 auto 8px
 }
-
 .agency{
-  display:inline-block;
-  color:var(--gold);
-  text-decoration:none;
-  font-size:11px;
-  font-weight:800;
-  letter-spacing:1.5px;
+  display:inline-block;color:var(--gold);text-decoration:none;
+  font-size:9px;font-weight:bold;letter-spacing:1.4px
 }
-
-.agency:hover{color:white}
-
-@media(max-width:650px){
-  .container{padding-left:16px;padding-right:16px}
-  header{padding:17px 0}
-  .brand{font-size:14px}
-  .nav-tag{font-size:9px;padding:8px}
-  .hero{padding-top:53px;padding-bottom:35px}
-  h1{letter-spacing:-1.8px}
-  .hero-desc{font-size:14px;line-height:1.8}
-  .chart-panel{height:120px;margin-top:28px}
-  .features{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-  .feature{padding:20px 12px}
-  .feature h3{font-size:13px}
-  .feature p{font-size:11px}
-  .section{padding-bottom:32px}
-  .section-title{font-size:22px}
-  .join-card{padding:26px 16px}
-  .join-btn{font-size:13px;gap:9px;min-height:58px}
-  .trust-row{gap:7px}
-  .trust-item{font-size:10px}
+@media(max-height:740px){
+  .page{gap:8px;padding-top:9px;padding-bottom:9px}
+  header{padding-bottom:7px}
+  .hero{padding-top:0}
+  h1{font-size:45px}
+  .desc{margin-top:7px;font-size:11px}
+  .chart{height:49px}
+  .section-title{font-size:16px}
+  .section-sub{margin-bottom:7px}
+  .feature{padding:8px}
+  .icon{width:30px;height:30px;font-size:16px}
+  .primary-join{margin-top:8px}
+  .secondary-join{margin-top:7px}
+  .trust{padding:2px 0}
+  .quote{font-size:13px}
 }
-
-@media(prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*:before,*:after{transition:none!important}
+@media(max-width:350px){
+  .page{padding-left:11px;padding-right:11px}
+  .brand{font-size:13px}
+  .tag{font-size:8px}
+  .feature{gap:7px;padding:8px 6px}
+  .feature h3{font-size:10px}
+  .feature p{font-size:8px}
+  .join-btn{font-size:10px;gap:6px}
 }
 </style>
 </head>
 
 <body>
+<div class="page">
 
-<header>
-  <div class="container nav">
+  <header>
     <div class="brand">TRADE WITH <span>GUPTA</span></div>
-    <div class="nav-tag">LEARN • ANALYZE • GROW</div>
-  </div>
-</header>
+    <div class="tag">LEARN • ANALYZE • GROW</div>
+  </header>
 
-<main>
-
-  <section class="hero container">
-
-    <div class="eyebrow">
-      <span class="live-dot"></span>
-      TRADING LEARNING COMMUNITY
-    </div>
-
-    <h1>
-      <span class="script">Trade With</span>
-      <span class="gold">GUPTA</span>
-    </h1>
-
-    <p class="hero-desc">
-      Learn market concepts, understand chart patterns
-      and build your trading knowledge with a community
-      focused on learning and growth.
+  <section class="hero">
+    <div class="eyebrow">✦ TRADING LEARNING COMMUNITY ✦</div>
+    <h1><small>TRADE WITH</small><span>GUPTA</span></h1>
+    <p class="desc">
+      Explore market insights, understand chart patterns
+      and grow your trading knowledge with our community.
     </p>
-
-    <div class="chart-panel" aria-hidden="true">
-      <div class="chart-label">MARKET MOVEMENT • ILLUSTRATION</div>
-      <div class="chart-line"></div>
-      <div class="chart-bars">
-        <i class="bar" style="--h:27%"></i>
-        <i class="bar red" style="--h:42%"></i>
-        <i class="bar" style="--h:36%"></i>
-        <i class="bar" style="--h:55%"></i>
-        <i class="bar" style="--h:48%"></i>
-        <i class="bar red" style="--h:34%"></i>
-        <i class="bar" style="--h:63%"></i>
-        <i class="bar" style="--h:52%"></i>
-        <i class="bar red" style="--h:43%"></i>
-        <i class="bar" style="--h:70%"></i>
-        <i class="bar" style="--h:61%"></i>
-        <i class="bar" style="--h:77%"></i>
-        <i class="bar red" style="--h:66%"></i>
-        <i class="bar" style="--h:85%"></i>
-        <i class="bar" style="--h:72%"></i>
-        <i class="bar red" style="--h:59%"></i>
-        <i class="bar" style="--h:81%"></i>
-        <i class="bar" style="--h:93%"></i>
-        <i class="bar red" style="--h:74%"></i>
-        <i class="bar" style="--h:88%"></i>
-        <i class="bar" style="--h:100%"></i>
-        <i class="bar red" style="--h:83%"></i>
-        <i class="bar" style="--h:95%"></i>
-        <i class="bar" style="--h:88%"></i>
-        <i class="bar" style="--h:100%"></i>
-        <i class="bar red" style="--h:79%"></i>
-        <i class="bar" style="--h:91%"></i>
-        <i class="bar" style="--h:100%"></i>
-      </div>
-    </div>
-
   </section>
 
-  <section class="section container">
+  <div class="chart" aria-hidden="true">
+    <div class="chart-title">MARKET MOVEMENT • CHART ILLUSTRATION</div>
+    <div class="bars">
+      <i class="bar" style="--h:25%"></i>
+      <i class="bar red" style="--h:40%"></i>
+      <i class="bar" style="--h:34%"></i>
+      <i class="bar" style="--h:55%"></i>
+      <i class="bar red" style="--h:42%"></i>
+      <i class="bar" style="--h:62%"></i>
+      <i class="bar" style="--h:51%"></i>
+      <i class="bar red" style="--h:44%"></i>
+      <i class="bar" style="--h:75%"></i>
+      <i class="bar" style="--h:64%"></i>
+      <i class="bar red" style="--h:55%"></i>
+      <i class="bar" style="--h:80%"></i>
+      <i class="bar" style="--h:70%"></i>
+      <i class="bar red" style="--h:62%"></i>
+      <i class="bar" style="--h:90%"></i>
+      <i class="bar" style="--h:80%"></i>
+      <i class="bar red" style="--h:72%"></i>
+      <i class="bar" style="--h:95%"></i>
+      <i class="bar" style="--h:85%"></i>
+      <i class="bar" style="--h:100%"></i>
+    </div>
+  </div>
 
+  <section>
     <h2 class="section-title">Your Journey Starts Here</h2>
-    <p class="section-subtitle">
-      Learn the concepts. Understand the market. Keep improving.
-    </p>
+    <p class="section-sub">Learn the concepts. Understand the market. Grow.</p>
 
     <div class="features">
-
       <article class="feature">
-        <div class="feature-icon">📈</div>
-        <h3>Market Insights</h3>
-        <p>Explore market movements and learn how to interpret charts.</p>
+        <div class="icon">📈</div>
+        <div><h3>Market Insights</h3><p>Explore charts and market movements.</p></div>
       </article>
-
       <article class="feature">
-        <div class="feature-icon">🎯</div>
-        <h3>Trading Education</h3>
-        <p>Understand technical concepts, setups and risk management.</p>
+        <div class="icon">🎯</div>
+        <div><h3>Trading Education</h3><p>Learn concepts and risk management.</p></div>
       </article>
-
       <article class="feature">
-        <div class="feature-icon">💬</div>
-        <h3>Community Support</h3>
-        <p>Connect with learners and exchange educational ideas.</p>
+        <div class="icon">💬</div>
+        <div><h3>Community Support</h3><p>Connect and learn together.</p></div>
       </article>
-
       <article class="feature">
-        <div class="feature-icon">💡</div>
-        <h3>Learn & Grow</h3>
-        <p>Build knowledge with a learning-first mindset.</p>
+        <div class="icon">💡</div>
+        <div><h3>Learn &amp; Grow</h3><p>Build knowledge step by step.</p></div>
       </article>
-
     </div>
+
+    <a class="join-btn primary-join"
+       href="https://t.me/+YqyGLn-h9K1iNTY1"
+       target="_blank" rel="noopener noreferrer">
+      <span class="telegram">➤</span>
+      JOIN FREE TELEGRAM GROUP
+      <span class="arrow">→</span>
+    </a>
   </section>
 
-  <section class="join-section">
-    <div class="join-card">
+  <section>
+    <a class="join-btn secondary-join"
+       href="https://t.me/+YqyGLn-h9K1iNTY1"
+       target="_blank" rel="noopener noreferrer">
+      <span class="telegram">➤</span>
+      JOIN OUR TELEGRAM COMMUNITY
+      <span class="arrow">→</span>
+    </a>
 
-      <h2>Join Our Telegram Community</h2>
-
-      <p>
-        Take the next step in your trading learning journey.
-        Join the group to explore educational updates and market concepts.
-      </p>
-
-      <a
-        class="join-btn"
-        href="https://t.me/+YqyGLn-h9K1iNTY1"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span class="telegram-icon" aria-hidden="true">➤</span>
-        JOIN FREE TELEGRAM GROUP
-        <span aria-hidden="true">→</span>
-      </a>
-
-      <div class="trust-row">
-        <div class="trust-item">
-          <span>◈</span>
-          Education First
-        </div>
-        <div class="trust-item">
-          <span>↗</span>
-          Learn at Your Pace
-        </div>
-        <div class="trust-item">
-          <span>◎</span>
-          Community Learning
-        </div>
-      </div>
-
+    <div class="trust">
+      <div><span>◈</span>Education First</div>
+      <div><span>↗</span>Keep Learning</div>
+      <div><span>◎</span>Community</div>
     </div>
   </section>
 
@@ -603,28 +270,40 @@ footer{
     <small>LEARN SMART • THINK CLEAR • MANAGE RISK</small>
   </div>
 
-</main>
+  <footer>
+    <p class="risk">
+      Educational content only. Trading involves financial risk and
+      losses are possible. No profits are guaranteed. Do your own research.
+    </p>
+    <a class="agency" href="https://t.me/ADBAGENCY"
+       target="_blank" rel="noopener noreferrer">
+      ✦ POWERED BY @ADBAGENCY ✦
+    </a>
+  </footer>
 
-<footer>
+</div>
 
-  <p class="risk">
-    Disclaimer: This community is intended for educational purposes.
-    Trading and investing involve financial risk, and losses are possible.
-    Nothing on this page guarantees profits or constitutes personalized
-    financial advice. Please do your own research before making decisions.
-  </p>
+<!-- Subscribe tracking: one event per page load -->
+<script>
+(function () {
+  let subscribeFired = false;
 
-  <a
-    class="agency"
-    href="https://t.me/ADBAGENCY"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    ✦ POWERED BY @ADBAGENCY ✦
-  </a>
+  document.querySelectorAll('.join-btn').forEach(function (button) {
+    button.addEventListener('click', function () {
+      if (subscribeFired) return;
 
-</footer>
+      subscribeFired = true;
+
+      if (typeof window.fbq === 'function') {
+        window.fbq('track', 'Subscribe', {
+          value: 100,
+          currency: 'INR'
+        });
+      }
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
-```
